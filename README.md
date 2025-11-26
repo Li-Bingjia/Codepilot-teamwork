@@ -131,7 +131,11 @@ This project is for educational and personal use. Please do not redistribute com
 
 ## Screenshots and Demo Video
 
-*(Add screenshots here if desired)*
+<img width="2240" height="1258" alt="image" src="https://github.com/user-attachments/assets/1d5d7ba3-4dac-4131-ad31-d274ab33aff3" />
+![1](https://github.com/user-attachments/assets/70df00e4-dc31-4a83-ac2d-0b8dbcc705ec)
+
+
+
 
 ---
 
