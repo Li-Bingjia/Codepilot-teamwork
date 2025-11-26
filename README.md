@@ -108,8 +108,7 @@ graphics/          # Game graphics (sprites, tiles, etc.)
 ## AI Chat Feature
 
 The in-game chatbox (TAB) connects to a local LLM API (default: `http://localhost:1234/v1/chat/completions`). You can use [LM Studio](https://lmstudio.ai/) or any compatible OpenAI API server. If not available, the chatbox will show an error message but the rest of the game works fine.
-<img width="2240" height="1260" alt="image" src="https://github.com/user-attachments/assets/b8b53e1c-2496-4b21-b244-4ddb56b599d8" />
-<img width="2098" height="1328" alt="image" src="https://github.com/user-attachments/assets/cc6881b8-6b5c-442a-bdc6-32a5db13e4b1" />
+<img width="1024" height="720" alt="image" src="https://github.com/user-attachments/assets/b8b53e1c-2496-4b21-b244-4ddb56b599d8" />
 
 
 ---
@@ -131,8 +130,13 @@ This project is for educational and personal use. Please do not redistribute com
 
 ## Screenshots and Demo Video
 
-<img width="2240" height="1258" alt="image" src="https://github.com/user-attachments/assets/1d5d7ba3-4dac-4131-ad31-d274ab33aff3" />
-![1](https://github.com/user-attachments/assets/70df00e4-dc31-4a83-ac2d-0b8dbcc705ec)
+<img width="1024" height="720" alt="image" src="https://github.com/user-attachments/assets/1d5d7ba3-4dac-4131-ad31-d274ab33aff3" />
+
+
+![3](https://github.com/user-attachments/assets/d151e783-eaf4-41d7-8d07-139e8c3ce183)
+
+
+![1](https://github.com/user-attachments/assets/6a1126c0-c953-426e-8cf0-f371bd63e08d)
 
 
 
