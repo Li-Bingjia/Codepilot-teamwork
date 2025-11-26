@@ -34,7 +34,6 @@
 | ESC         | Back to title                         |
 | X           | Save game                             |
 
-You can also use the mouse to interact with menus.
 
 ---
 
