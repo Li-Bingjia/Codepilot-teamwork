@@ -115,9 +115,11 @@ The in-game chatbox (TAB) connects to a local LLM API (default: `http://localhos
 
 ## Credits
 
-- **Programming & Art:** Your Name
-- **Music:** [tallbeard.itch.io/music-loop-bundle](https://tallbeard.itch.io/music-loop-bundle)
-- **Character Sprites:** [httpsarks.itch.iodino-characters](https://harks.itch.io/dino-characters)
+- **Programme:** Li Bingjia
+- **Art:** https://cupnooble.itch.io/sprout-lands-ui-pack
+- **Music:** https://tallbeard.itch.io/music-loop-bundle 
+- **Character Sprites:** https://arks.itch.iodino-characters
+  https://free-game-assets.itch.io/free-summer-pixel-art-backgrounds
 - **Font:** LycheeSoda.ttf
 
 ---
