@@ -24,7 +24,7 @@
 | Key         | Action                                 |
 |-------------|----------------------------------------|
 | Arrow Keys  | Move                                  |
-| SPACE       | Use tool (hoe/axe/water)              |
+| SPACE       | Use tool (hoe/axe/water) Sell/Buy in shop             |
 | Q           | Switch tool                           |
 | E           | Switch seed                           |
 | CTRL        | Plant seed                            |
