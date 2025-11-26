@@ -29,9 +29,9 @@
 | E           | Switch seed                           |
 | CTRL        | Plant seed                            |
 | ENTER       | Interact (Trader shop, Bed sleep)     |
-| M           | Open shop menu                        |
-| TAB         | Toggle AI chat                        |
-| ESC         | Back to title / Close chat            |
+| M           | Open/Close shop menu                  |
+| TAB         | Toggle/Close AI chat                  |
+| ESC         | Back to title                         |
 | X           | Save game                             |
 
 You can also use the mouse to interact with menus.
