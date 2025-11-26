@@ -133,11 +133,6 @@ This project is for educational and personal use. Please do not redistribute com
 <img width="1024" height="720" alt="image" src="https://github.com/user-attachments/assets/1d5d7ba3-4dac-4131-ad31-d274ab33aff3" />
 
 
-![3](https://github.com/user-attachments/assets/d151e783-eaf4-41d7-8d07-139e8c3ce183)
-
-
-![1](https://github.com/user-attachments/assets/6a1126c0-c953-426e-8cf0-f371bd63e08d)
-
 
 
 
