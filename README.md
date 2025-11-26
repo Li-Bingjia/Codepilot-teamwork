@@ -99,6 +99,7 @@ graphics/          # Game graphics (sprites, tiles, etc.)
 - Menus and UI: `code/start.py`, `code/menu.py`, `code/overlay.py`
 - AI Chat: `code/chat.py`
 - Save/Load: `code/save.py`
+- Save in :`data/save.json`
 
 ---
 
