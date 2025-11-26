@@ -54,10 +54,10 @@ You can also use the mouse to interact with menus.
 
 ### Requirements
 
-- Python 3.8+
+- Python 3.8+(best in 3.11)
 - [Pygame](https://www.pygame.org/) (`pip install pygame`)
 - (Optional for AI chat) [requests](https://pypi.org/project/requests/) (`pip install requests`)
-- (Optional for AI chat) A local LLM API server (e.g., [LM Studio](https://lmstudio.ai/))
+- (Optional for AI chat) A local LLM API server (e.g., [LM Studio](https://lmstudio.ai/)) Using model openai/gpt-oss-20b
 
 ### Running the Game
 
