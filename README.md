@@ -2,6 +2,9 @@
 # Farming Land
 
 **Farming Land** is a pixel-art farming simulation game inspired by Stardew Valley and Harvest Moon. Players can plant crops, chop trees, collect apples and wood, interact with a pet, and trade with an in-game AI-powered shopkeeper. The game is built with Python and Pygame, featuring a tile-based world, day/night cycle, weather, and a simple save/load system.
+![1](https://github.com/user-attachments/assets/fde51330-549c-4f52-845e-053171b9fc0d)
+
+
 
 ---
 
