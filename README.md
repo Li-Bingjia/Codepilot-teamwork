@@ -108,6 +108,9 @@ graphics/          # Game graphics (sprites, tiles, etc.)
 ## AI Chat Feature
 
 The in-game chatbox (TAB) connects to a local LLM API (default: `http://localhost:1234/v1/chat/completions`). You can use [LM Studio](https://lmstudio.ai/) or any compatible OpenAI API server. If not available, the chatbox will show an error message but the rest of the game works fine.
+<img width="2240" height="1260" alt="image" src="https://github.com/user-attachments/assets/b8b53e1c-2496-4b21-b244-4ddb56b599d8" />
+<img width="2098" height="1328" alt="image" src="https://github.com/user-attachments/assets/cc6881b8-6b5c-442a-bdc6-32a5db13e4b1" />
+
 
 ---
 
