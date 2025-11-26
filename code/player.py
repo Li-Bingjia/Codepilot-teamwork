@@ -71,6 +71,8 @@ class Player(pygame.sprite.Sprite):
 		self.watering = pygame.mixer.Sound(os.path.join(os.path.dirname(__file__), '..', 'audio', 'water.mp3'))
 		self.watering.set_volume(0.2)
 
+		self.plant_collision_rect = self.rect.inflate(-self.rect.width * 0.4, -self.rect.height * 0.4)
+
 	def use_tool(self):
 		if self.selected_tool == 'hoe':
 			self.soil_layer.get_hit(self.target_pos)
@@ -233,6 +235,9 @@ class Player(pygame.sprite.Sprite):
 		self.hitbox.centery = round(self.pos.y)
 		self.rect.centery = self.hitbox.centery
 		self.collision('vertical')
+
+		self.rect.center += self.direction * self.speed * dt
+		self.plant_collision_rect.center = self.rect.center  		
 
 	def update(self, dt):
 		self.input()
