@@ -163,6 +163,7 @@ class Level:
         if hasattr(self, 'sky'):
             self.just_new_day = True
         self.time = 0
+        self.soil_layer.update_plants()
         self.soil_layer.remove_water()
         
     def reset(self):
