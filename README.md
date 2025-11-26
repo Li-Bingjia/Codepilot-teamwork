@@ -56,6 +56,7 @@ You can also use the mouse to interact with menus.
 
 - Python 3.8+(best in 3.11)
 - [Pygame](https://www.pygame.org/) (`pip install pygame`)
+- (Optional for editing map) [Tiled](https://www.mapeditor.org/)
 - (Optional for AI chat) [requests](https://pypi.org/project/requests/) (`pip install requests`)
 - (Optional for AI chat) A local LLM API server (e.g., [LM Studio](https://lmstudio.ai/)) Using model openai/gpt-oss-20b
 
