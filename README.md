@@ -94,6 +94,8 @@ code/              # All Python source code
 data/              # Tiled map and tilesets
 font/              # Custom font(s)
 graphics/          # Game graphics (sprites, tiles, etc.)
+requirements.txt   # Python dependencies
+README.md          # Project documentation
 ```
 
 - Main entry point: `code/main.py`
