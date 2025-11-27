@@ -49,6 +49,13 @@ class Main:
                 self.controls.update()
 
             elif self.current_scene == 'game':
+                chatbox = self.game.level.chatbox if self.game and hasattr(self.game, 'level') else None
+                if chatbox and chatbox.active and not self.chat_repeat_disabled:
+                    pygame.key.set_repeat(0)  # Disable repeat for chat
+                    self.chat_repeat_disabled = True
+                elif (not chatbox or not chatbox.active) and self.chat_repeat_disabled:
+                    pygame.key.set_repeat(150, 30)  # Restore repeat for game
+                    self.chat_repeat_disabled = False                
                 self.game.run()                     # 按 ESC 会 return
                 self.current_scene = 'start' 
                 
@@ -108,3 +115,4 @@ class ControlsScreen:
 if __name__ == '__main__':
 
     Main().run()
+
