@@ -26,6 +26,29 @@ class Menu:
 		pygame.draw.rect(self.display_surface,'White',text_rect.inflate(10,10),0,4)
 		self.display_surface.blit(text_surf,text_rect)
 
+	def handle_event(self, event):
+		self.timer.update()
+		if not self.timer.active:
+			if event.type == pygame.KEYDOWN:
+				if event.key == pygame.K_UP:
+					self.index -= 1
+					self.timer.activate()
+				elif event.key == pygame.K_DOWN:
+					self.index += 1
+					self.timer.activate()
+				elif event.key == pygame.K_SPACE:
+					self.timer.activate()
+					current_item = self.options[self.index]
+					if self.index <= self.sell_border:
+						if self.player.item_inventory[current_item] > 0:
+							self.player.item_inventory[current_item] -= 1
+							self.player.money += SALE_PRICES[current_item]
+					else:
+						seed_price = PURCHASE_PRICES[current_item]
+						if self.player.money >= seed_price:
+							self.player.seed_inventory[current_item] += 1
+							self.player.money -= PURCHASE_PRICES[current_item]
+
 	def setup(self):
 		self.text_surfs = []
 		self.total_height = 0
@@ -87,7 +110,6 @@ class Menu:
 				self.display_surface.blit(self.buy_text,pos_rect)
 
 	def update(self):
-		self.input()
 		self.display_money()
 		for text_index, text_surf in enumerate(self.text_surfs):
 			top = self.main_rect.top + text_index * (text_surf.get_height() + (self.padding * 2) + self.space)
