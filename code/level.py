@@ -205,6 +205,9 @@ class Level:
             # 聊天框处理事件（输入、TAB、滚轮等）
             if self.chatbox.handle_event(event):
                 continue  # 事件已被聊天框消费，不再传给其他系统
+            if self.shop_active:
+                self.menu.handle_event(event)
+                continue
 
             if event.type == pygame.KEYDOWN and event.key == pygame.K_x:
                 self.save_system.save_game(self.player, self)            
@@ -311,4 +314,5 @@ class CameraGroup(pygame.sprite.Group):
                         self.display_surface.blit(bubble_surf, bubble_rect)
                 except Exception:
                     pass
+
 
