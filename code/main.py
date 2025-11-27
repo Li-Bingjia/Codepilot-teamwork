@@ -24,6 +24,8 @@ class Main:
         self.game = None
         self.current_scene = 'start'   # 'start' / 'game' / 'controls'
 
+        self.chat_repeat_disabled = False    
+
     def start_game(self, new_game=False, load_save=False):
         # 目前 Level 不支持参数，直接忽略也没事
         self.game = Game(self.screen)
@@ -104,4 +106,5 @@ class ControlsScreen:
 # ==============================================================
 
 if __name__ == '__main__':
+
     Main().run()
