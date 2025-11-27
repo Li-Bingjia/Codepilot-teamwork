@@ -73,7 +73,7 @@
 
 2. **Install dependencies:**
     ```sh
-    pip install pygame requests
+    pip install -r requirements.txt
     ```
 
 3. **(Optional) Start your local LLM API server** if you want to use the AI chat feature.
