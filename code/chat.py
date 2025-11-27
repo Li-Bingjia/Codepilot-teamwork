@@ -87,7 +87,7 @@ class ChatBox:
 
         self.reply_queue = queue.Queue()
         
-        self.api_url = "http://127.0.0.1:1234/v1/chat/completions"
+        self.api_url = "http://localhost:1234/v1/chat/completions"
         self.model = "openai/gpt-oss-20b"     
 
     def toggle(self):
@@ -288,4 +288,5 @@ Current status:
                 current = word
         if current:
             lines.append(current)
+
         return lines
