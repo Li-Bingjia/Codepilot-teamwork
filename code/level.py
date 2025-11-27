@@ -162,8 +162,9 @@ class Level:
 
     def next_day(self):
         if hasattr(self, 'sky'):
-            self.just_new_day = True
+            self.sky.force_day() 
         self.time = 0
+        self.is_night = False
         self.soil_layer.update_plants()
         self.soil_layer.remove_water()
         
@@ -256,11 +257,19 @@ class Level:
                 self.just_new_day = False
 
             if not self.is_night:
+                self.time += dt
+                progress = min(self.time / self.day_length, 1.0)
                 self.sky.set_time(progress)
                 if progress >= 1.0:
                     self.is_night = True 
+                    self.time = self.day_length
                     
+            else:
+                self.sky.set_time(1.0)
+                
             self.sky.display(dt)
+            if self.raining:
+                self.rain.update()
         else:
             self.sky.display(0)
 
@@ -314,6 +323,7 @@ class CameraGroup(pygame.sprite.Group):
                         self.display_surface.blit(bubble_surf, bubble_rect)
                 except Exception:
                     pass
+
 
 
 
