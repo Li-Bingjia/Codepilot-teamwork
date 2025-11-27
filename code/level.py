@@ -232,7 +232,6 @@ class Level:
             # 只有彻底自由时才更新游戏世界
             self.plant_collision()
             
-        self.all_sprites.update(dt)
 
         # 4. 核心：只要商店或聊天开着 → 玩家完全冻结！
         if self.shop_active or self.chatbox.active:
@@ -241,6 +240,7 @@ class Level:
         else:
             # 只有彻底自由时才更新游戏世界
             self.plant_collision()
+            self.all_sprites.update(dt)            
 
         # 5. 天空与雨：只在非菜单状态更新
         if not self.shop_active and not self.chatbox.active:
@@ -314,5 +314,6 @@ class CameraGroup(pygame.sprite.Group):
                         self.display_surface.blit(bubble_surf, bubble_rect)
                 except Exception:
                     pass
+
 
 
