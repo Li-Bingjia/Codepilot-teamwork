@@ -73,7 +73,8 @@ class Level:
         Pet(self.player, self.all_sprites)
 
         self.chat_cooldown = Timer(150)
-
+        
+        self.is_night = False
         # ！！！关键：最后创建 ChatBox，此时 self 已经完全初始化！！
         self.chatbox = ChatBox(
             screen=self.display_surface,
@@ -251,7 +252,11 @@ class Level:
                 self.sky.target = [255, 255, 255]
                 self.just_new_day = False
 
-            self.sky.set_time(progress)
+            if not self.is_night:
+                self.sky.set_time(progress)
+                if progress >= 1.0:
+                    self.is_night = True 
+                    
             self.sky.display(dt)
         else:
             self.sky.display(0)
@@ -306,3 +311,4 @@ class CameraGroup(pygame.sprite.Group):
                         self.display_surface.blit(bubble_surf, bubble_rect)
                 except Exception:
                     pass
+
