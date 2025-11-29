@@ -137,6 +137,7 @@ This project is for educational and personal use. Please do not redistribute com
 <img width="1024" height="720" alt="image" src="https://github.com/user-attachments/assets/1d5d7ba3-4dac-4131-ad31-d274ab33aff3" />
 
 
+Video link: https://www.youtube.com/watch?v=VFti4T1h808
 
 
 
